@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page | Nifty - Admin Template</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+
+
+    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+
+
+        
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+
+
+    <!--Magic Checkbox [ OPTIONAL ]-->
+    <link href="plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
+
+	<link href="/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--Pace - Page Load Progress Par [OPTIONAL]-->
+    <link href="plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="plugins/pace/pace.min.js"></script>
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="js/bootstrap.min.js"></script>
+
+	<script src="js/popper.min.js"></script>
+    <!-- NiftyJS [ RECOMMENDED ] -->
+
+    <script src="js/nifty.min.js"></script>
+
+
+
+
+
+
+    <!--=================================================-->
+    
+    <!--Background Image [ DEMONSTRATION ]-->
+    <script src="js/demo/bg-images.js"></script>
+
+
+
+	<script src="js/demo/form-wizard.js"></script>
+	<script src="plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+	<script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+	<script src="js/demo/icons.js"></script>
+    <script src="laydate/laydate.js"></script>
+	<script src="js/buss/registry/check-data.js"></script>
+    <script src="js/buss/registry/lay-date-active.js"></script>
+    <!--=================================================
+
+    REQUIRED
+    You must include this in your project.
+
+
+    RECOMMENDED
+    This category must be included but you may modify which plugins or components which should be included in your project.
+
+
+    OPTIONAL
+    Optional plugins. You may choose whether to include it in your project or not.
+
+
+    DEMONSTRATION
+    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+
+    SAMPLE
+    Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+    Detailed information and more samples can be found in the document.
+
+    =================================================-->
+        
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
+<body>
+	<div id="container" class="cls-container">
+
+
+		<!-- BACKGROUND IMAGE -->
+		<!--===================================================-->
+		<div id="bg-overlay"></div>
+
+
+		<!-- REGISTRATION FORM -->
+		<!--===================================================-->
+		<div class="cls-content">
+		    <div class="clg-content-lg panel">
+				<div>
+					<div class="eq-height clearfix">
+						<div class="col-md-4 eq-box-md text-center box-vmiddle-wrap bord-hor">
+
+							<!-- Simple Promotion Widget -->
+							<!--===================================================-->
+							<div class="box-vmiddle pad-all">
+								<h3 class="text-main">下一个待办事项</h3>
+								<div class="pad-ver">
+									<i class="fa fa-calendar " style="font-size:5em;line-height:1em;"></i>
+								</div>
+								<p class="pad-btn text-sm">来， <span class="text-lg text-bold text-main">快速创建日程</span> ，我们将会多方式的提醒你去推进它！</p>
+								<br>
+								<a class="btn btn-lg btn-primary" href="#" style="color: #fff;">期待更多</a>
+							</div>
+							<!--===================================================-->
+
+						</div>
+						<div class="col-md-8 eq-box-md eq-no-panel">
+
+							<!-- Main Form Wizard -->
+							<!--===================================================-->
+							<div id="demo-main-wz">
+
+								<!--nav-->
+								<ul class="row wz-step wz-icon-bw wz-nav-off mar-top wz-steps">
+									<li class="col-xs-3 active">
+										<a data-toggle="tab" href="#demo-main-tab1" aria-expanded="true">
+											<span class="text-danger"><i class="demo-pli-male icon-2x"></i></span>
+											<p class="text-semibold mar-no">基本信息</p>
+										</a>
+									</li>
+									<li class="col-xs-3">
+										<a data-toggle="tab" href="#demo-main-tab2">
+											<span class="text-warning"><i class="demo-pli-information icon-2x"></i></span>
+											<p class="text-semibold mar-no">来尝试构建</p>
+										</a>
+									</li>
+									<li class="col-xs-3">
+										<a data-toggle="tab" href="#demo-main-tab3">
+											<span class="text-info"><i class="demo-pli-home icon-2x"></i></span>
+											<p class="text-semibold mar-no">Address</p>
+										</a>
+									</li>
+									<li class="col-xs-3">
+										<a data-toggle="tab" href="#demo-main-tab4">
+											<span class="text-success"><i class="demo-pli-medal-2 icon-2x"></i></span>
+											<p class="text-semibold mar-no">Finish</p>
+										</a>
+									</li>
+								</ul>
+
+								<!--progress bar-->
+								<div class="progress progress-xs">
+									<div class="progress-bar progress-bar-primary" style="width: 25%; left: 0%; position: relative; transition: all 0.5s ease 0s;"></div>
+								</div>
+
+
+								<!--form-->
+								<form class="form-horizontal">
+									<div class="panel-body">
+										<div class="tab-content">
+
+											<!--First tab-->
+											<div id="demo-main-tab1" class="tab-pane active in">
+												<div class="form-group">
+													<label class="col-lg-2 control-label">姓名</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" name="username" placeholder="真实姓名" onblur="checkName(this)">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label">邮箱</label>
+													<div class="col-lg-9">
+														<input type="email" class="form-control" name="email" placeholder="个人邮箱" onblur="checkEmail(this)">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label">密码</label>
+													<div class="col-lg-9 pad-no">
+														<div class="clearfix">
+															<div class="col-lg-4">
+																<input type="password" class="form-control mar-btm" name="password" placeholder="密码,含字母、数字、特殊字符,8-30位" onblur="checkPwd(this)">
+															</div>
+															<div class="col-lg-4 text-lg-right"><label class="control-label">确认密码</label></div>
+															<div class="col-lg-4"><input type="password" class="form-control" name="password2" placeholder="再次输入密码" onblur="doubleCheckPwd(this)"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--Second tab-->
+											<div id="demo-main-tab2" class="tab-pane fade">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">日程名称</label>
+                                                    <div class="col-lg-9">
+                                                        <input type="text" placeholder="日程名称" name="scheduleName" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label">日程开始时间</label>
+                                                    <div class="col-lg-9 pad-no">
+                                                        <div class="clearfix">
+                                                            <div class="col-lg-4">
+                                                                <input type="text" id="start" class="form-control mar-btm" name="scheduleStartTime" placeholder="日程时间跨度应大于1小时" >
+                                                            </div>
+                                                            <div class="col-lg-4 text-lg-right"><label class="control-label">日程结束时间</label></div>
+                                                            <div class="col-lg-4"><input type="text" id="end" class="form-control" name="scheduleEndTime" placeholder="日程时间跨度应大于1小时"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label">用何种方式来提醒?</label>
+													<div class="col-lg-9">
+                                                        <div class="checkbox">
+
+                                                            <!-- Inline Checkboxes -->
+                                                            <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked="">
+                                                            <label for="demo-form-inline-checkbox">邮箱</label>
+
+                                                            <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
+                                                            <label for="demo-form-inline-checkbox-2">电话</label>
+
+
+                                                        </div>
+													</div>
+												</div>
+											</div>
+
+											<!--Third tab-->
+											<div id="demo-main-tab3" class="tab-pane">
+												<div class="form-group">
+													<label class="col-lg-2 control-label">Phone Number</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Phone number" name="phoneNumber" class="form-control">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label">Address</label>
+													<div class="col-lg-9">
+														<input type="text" placeholder="Address" name="address" class="form-control">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 control-label">City</label>
+													<div class="col-lg-9 pad-no">
+														<div class="clearfix">
+															<div class="col-lg-5">
+																<input type="text" placeholder="City" name="city" class="form-control">
+															</div>
+															<div class="col-lg-3 text-lg-right"><label class="control-label">Poscode</label></div>
+															<div class="col-lg-4"><input type="text" placeholder="Poscode" name="poscode" class="form-control"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<!--Fourth tab-->
+											<div id="demo-main-tab4" class="tab-pane">
+												<div class="form-group">
+													<label class="col-lg-2 control-label">Bio</label>
+													<div class="col-lg-9">
+														<textarea placeholder="Tell us your story..." rows="4" name="bio" class="form-control"></textarea>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-lg-9 col-lg-offset-2">
+														<div class="checkbox">
+															<input id="demo-checkbox-1" class="magic-checkbox" type="checkbox" name="acceptTerms">
+															<label for="demo-checkbox-1"> Accept the terms and policies</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<!--Footer buttons-->
+									<div class="pull-right pad-rgt mar-btm">
+										<button type="button" class="previous btn btn-primary disabled">向前</button>
+										<button type="button" class="next btn btn-primary" id="nextBtn">继续</button>
+										<button type="button" class="finish btn btn-success" disabled="" style="display: none;" title="警示"
+												data-container="body" data-toggle="popover" data-placement="bottom"
+												data-content="信息填写有误,请检查表单!">
+											完成
+										</button>
+<!--										<button type="button" class="finish btn btn-success" disabled="" style="display: none;" data-toggle="popover" title="Popover title" data-content="表单填写内容有误，请检查!">完成</button>-->
+<!--										<button type="button" class="finish btn btn-success" >完成</button>-->
+									</div>
+
+								</form>
+							</div>
+							<!--===================================================-->
+							<!-- End of Main Form Wizard -->
+
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<!--===================================================-->
+
+
+		<!-- DEMO PURPOSE ONLY -->
+		<!--===================================================-->
+
+		<!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+		</body>
+</html>
