@@ -59,4 +59,28 @@ function checkAllData() {
 
 }
 
+function clickNext() {
+    $('#demo-bsc-tab-1').removeClass('in active');
+    $('#demo-bsc-tab-2').addClass('in active');
+    $('#pre').removeClass(' disabled');
+    $('#next').addClass('disabled');
+    $('#next').css('display','none');
+    $('#finish').css('display','');
+}
 
+function clickPre() {
+    $('#demo-bsc-tab-2').removeClass('in active');
+    $('#demo-bsc-tab-1').addClass('in active');
+    $('#next').removeClass(' disabled');
+    $('#pre').addClass('disabled');
+    $('#finish').css('display','none');
+    $('#next').css('display','');
+
+}
+
+// $('#registerForm').validateAdminLte({
+//     submitHandler: function (f) {
+//         console.log("pass")
+//     }
+//
+// });
